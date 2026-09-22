@@ -7,9 +7,9 @@ sys.path.insert(0, ROOT)
 if os.environ.get("SEARCH_DIR"):
     sys.path.insert(0, os.path.abspath(os.environ["SEARCH_DIR"]))
 
-import adversarial_search as search  # noqa: E402
-from tictactoe import TicTacToe      # noqa: E402
-from tree_game import TreeGame       # noqa: E402
+import adversarial_search as search
+from tictactoe import TicTacToe
+from tree_game import TreeGame
 
 HINT = " Check the Requirements section of the README."
 
