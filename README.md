@@ -132,7 +132,6 @@ python main.py play --human O               # the computer moves first
 python main.py play --algorithm minimax     # use minimax instead of alpha-beta
 ```
 
-The board shows each empty cell's number. Type a number from the list in the prompt and press Enter.
 
 ## Submission
 
@@ -146,5 +145,3 @@ Submit `adversarial_search.py`.
 | Alpha-beta on trees | 45 |
 | Tic-tac-toe | 25 |
 | **Total** | **100** |
-
-Code that special-cases a tree or position earns no credit for that part.
