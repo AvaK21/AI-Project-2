@@ -85,6 +85,7 @@ def alpha_beta_search(game, state):
                 min_value = value
                 move = a
                 beta = min(beta, min_value)
+            # pruning
             if min_value <= alpha:
                 return (min_value, move)
         return (min_value,move)
@@ -98,3 +99,13 @@ def alpha_beta_search(game, state):
 
 
 #null in psuedocode = None
+#Nesting functions to avoid passing the player variable around and around
+#alpha - best value MAX can guarantee so far
+#beta - best value MIN can guarantee so far
+
+# Initalize a = -math.inf, b = math.inf  
+
+# Prune if a >= b... at a MAX node, update a = max(a, value)
+
+# Prune if b a>= b at a MIN node, update b = min(b, value)
+#alpha, beta doesn't chagne result of minimax result.
